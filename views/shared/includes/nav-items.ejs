@@ -1,0 +1,20 @@
+<ul class="nav-items">
+    <% if (!locals.isAdmin) { %>
+    <li><a href="/about">Why Fit In</a></li>
+    <li><a href="/stratergy">No Limits Just Freedom</a></li>
+    <% } %>
+
+    <% if (!locals.isAuth) { %>
+        <li><a href="/signup">Signup</a></li>
+        <li><a href="/login">Login</a></li>
+        <% } %>
+
+        <% if (locals.isAuth) { %>
+    <li>
+        <form action="/logout" method="Post">
+            <input type="hidden" name="_csrf" value="<%=locals.csrfToken%>">
+            <button class="btn">Logout</button>
+        </form>
+    </li>
+    <% } %>
+</ul>

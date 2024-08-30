@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+  color: var(--fonts-cooper-tone75);
+}
+
+form {
+  max-width: 40rem;
+  margin: var(--space-8) auto;
+  background-color: transparent;
+  border-radius: var(--border-radius-small);
+  text-align: center;
+}
+
+form a {
+  color: var(--fonts-cooper-tone50);
+}
+
+form a:hover,
+form a:active {
+    color: var(--fonts-cooper-tone75);
+}

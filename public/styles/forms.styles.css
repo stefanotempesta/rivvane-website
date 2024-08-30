@@ -1,0 +1,14 @@
+.form-items  {
+    display: flex;
+    justify-content: space-between;
+    color: var(--fonts-cooper-tone50);
+}
+
+input, 
+textarea {
+    align-items: center;
+    font: inherit;
+    border-radius: var(--border-radius-small);
+    border: none;
+    width: 60%; 
+}

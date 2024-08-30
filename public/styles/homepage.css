@@ -1,0 +1,26 @@
+#hero-image {
+  height: 25rem;
+  background-image: url(/images/logo.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#hero-content {
+ text-align: center;
+ position: relative;
+
+}
+
+h1 {
+  font-family: 'kaushan script', 'sans-serif';
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.btn  {
+  font-size: 1.5rem;
+}
+

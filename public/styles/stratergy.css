@@ -1,0 +1,22 @@
+
+ #hero-image  {
+  height: 30rem;
+  background-image: url(/images/lifestyle-page.png);
+  background-position: center;
+  background-size: cover;
+  margin-top: var(--space-8);
+ }
+
+ .hero-image {
+  height: 30rem;
+  width: 100%;
+  text-align: center;
+  padding: auto;
+  overflow: hidden;
+  background: rgba(0,0,0,.8);
+ }
+ 
+ p {
+   font-size: 1.5rem;
+ }
+

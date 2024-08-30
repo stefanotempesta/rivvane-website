@@ -1,0 +1,26 @@
+{
+  "name": "official-website-rivvane",
+  "version": "1.0.0",
+  "description": "company-website",
+  "main": "index.js",
+  "engines": {
+    "node": ">=22.x"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "nathaniel-williams",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongodb-session": "^5.0.0",
+    "csurf": "^1.11.0",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mongodb": "^6.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
