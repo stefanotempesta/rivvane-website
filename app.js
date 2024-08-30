@@ -3,7 +3,8 @@ const path = require("path");
 const express = require("express");
 const csrf = require("csurf");
 const expressSession = require("express-session");
-
+const dotenv = require("dotenv");
+dotenv.config();
 const createSessionConfig = require("./config/session");
 const db = require("./data/database");
 const addCsrfTokenMiddleware = require("./middlewares/csrf-token");
@@ -42,13 +43,16 @@ app.use(stratergyRoutes);
 
 app.use(errorHandlerMiddleware);
 
+app.get("/", (req, res) => {
+  res.sendStatus(200);
+});
+
 db.connectToDatabase()
   .then(function () {
-    app.listen(3000)
-
-      console.log(`Server is running on port ${port});
+    console.log(`Server is running on port ${port}`);
+    app.listen(port); 
   })
   .catch(function (error) {
     console.log("Failed to connect to the database!");
-    console.log(error)
-    })
+    console.log(error);
+  });

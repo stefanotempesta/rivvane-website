@@ -5,8 +5,8 @@ function createSessionStore() {
   const MongoDBStore = mongoDbStore(expressSession);
 
   const store = new MongoDBStore({
-    uri: "mongodb://localhost:27017",
-    databaseName: "rivv-database",
+    uri: process.env.MONGODB_URI,
+    databaseName: process.env.MONGODB_NAME,
     collection: "session",
   });
   return store;
